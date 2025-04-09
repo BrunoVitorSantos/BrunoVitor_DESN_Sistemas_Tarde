@@ -54,7 +54,7 @@ button{
     height: 100%;
 }
 
-.btn1, btn2{
+.btn1, .btn2{
     background-color: rgb( 37, 37, 37);
     color: white;
     height: 35px;
