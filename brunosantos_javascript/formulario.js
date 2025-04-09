@@ -1,4 +1,4 @@
- //executar marcaras
+//executar marcaras
 //define o objeto e chama a funcao
 function mascara(o, f){
     objeto=o
@@ -32,6 +32,8 @@ function RGeCPF (variavel){
     //COLOCA PONTO ENTRE O TERCEIRO E O QUARTO DIGITO
     variavel=variavel.replace(/(\d{3})(\d)/,"$1.$2")
 
+    variavel=variavel.replace(/(\d{3})(\d)/,"$1.$2")
+
     //COLOCA PONTO ENTRE O SEXTO E O SETIMO DIGITO
     variavel=variavel.replace(/(\d{3})(\d)/,"$1-$2")
 
@@ -40,10 +42,8 @@ function RGeCPF (variavel){
 
 function cep(variavel){
     variavel=variavel.replace(/\D/g,"") //Remove tudo o que não é dígito
-    
-    variavel=variavel.replace(/(\d{2})(\d)/,"$1.$2")
 
-    variavel=variavel.replace(/(\d{3})(\d{1,3})$/,"$1-$2")
+    variavel=variavel.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
 
     return variavel
 }
@@ -52,5 +52,13 @@ function data(variavel){
     variavel=variavel.replace(/\D/g,"") //Remove tudo o que não é dígito
     variavel=variavel.replace(/(\d{2})(\d)/,"$1/$2")
     variavel=variavel.replace(/(\d{2})(\d)/,"$1/$2")
+    return variavel
+}
+
+function CartaoSus(variavel){
+    variavel=variavel.replace(/\D/g,"") //Remove tudo o que não é dígito
+    variavel=variavel.replace(/(\d{3})(\d)/,"$1 $2")
+    variavel=variavel.replace(/(\d{4})(\d)/,"$1 $2")
+    variavel=variavel.replace(/(\d{4})(\d)/,"$1 $2")
     return variavel
 }
