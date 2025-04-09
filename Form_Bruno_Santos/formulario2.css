@@ -1,0 +1,136 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #3d3d3d, #000000);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    font-family: courier, monospace;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: courier, monospace;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* Formulário */
+form {
+    width: 40%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+fieldset.dados-pessoais {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+    border-radius: 100px;
+}
+
+fieldset.dados-endereco {
+    border-color: #2196f3;
+    background-color: #e3f2fd;
+}
+
+fieldset.dados-login {
+    border-color: #ff9800;
+    background-color: #fff3e0;
+}
+
+/* Legend */
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+legend.dados-pessoais {
+    color: #4caf50;
+}
+
+legend.dados-endereco {
+    color: #2196f3;
+}
+
+legend.dados-login {
+    color: #ff9800;
+}
+
+/* Campos */
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+/* Botões */
+.botoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: linear-gradient(120deg, #5925b9, #8625b3);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5x;
+    margin-bottom: 10px;
+    margin: 10px, 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2575fc;
+}
+
+input[type="reset"]:hover {
+    background-color: #ff4e50;
+}
