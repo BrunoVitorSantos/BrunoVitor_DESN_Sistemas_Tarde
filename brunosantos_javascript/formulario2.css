@@ -128,6 +128,7 @@ input[type="reset"] {
 }
 
 input[type="submit"]:hover {
+    
     background-color: #2575fc;
 }
 
