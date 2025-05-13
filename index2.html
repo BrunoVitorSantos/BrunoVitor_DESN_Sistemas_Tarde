@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produtos</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro Produtos</h2>
+        <form action="/submit" method="post">
+            <label for="name">Código Peça:</label>
+            <input type="text" id="codigo" name="name" required>
+
+            <label for="desc">Descrição:</label>
+            <textarea name="mensagem" id="desc" placeholder="Descrição do produto" required></textarea>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco" name="preco" placeholder="R$" required pattern="\d{1,11}" title="Insira um telefone válido (10 ou 11 dígitos)"> 
+
+            <label for="quant">Quantidade:</label>
+            <input type="number" id="quant" name="quant" required pattern="\d{1,11}" title="Insira um telefone válido (10 ou 11 dígitos)"> 
+
+            <button type="submit">Cadastrar</button>
+
+
+        </form> 
+    </div>
+</body>
+</html>
